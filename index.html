@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Momentum</title>
+	<script src="https://kit.fontawesome.com/b8140ce19e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- backgrounds -->
+	<div id="backgrounds" style="background-color:grey"></div>
+
+	 <!-- weather -->
+	<div id="weather">
+		<span class="icon"></span>
+		<span class="temp"></span>
+		<span class="city"></span>
+	</div>
+
+	<div class="mid-contents">
+		<!-- clock -->
+		<div id="clock">00:00</div>
+
+		<!-- login -->
+		<div id="login" class="hidden">
+			<form class="login-form">
+				<lable for="username">Hello, what's your name?</lable>
+				<input type="text" id="username" maxlength="15" required />
+				<input type="submit" value="Log In" />
+			</form>
+		</div>
+
+		<!-- greeting -->
+		<div id="greeting" class="hidden">
+			<form class="greeting-form">
+				<span class="greeting-comments"></span>
+				<span class="greeting-name-wrapper">
+					<span class="greeting-name"></span>
+					<!-- <input type="text" class="edit-name" value="" /> -->
+					<button type="button">
+						<i class="fa-solid fa-pen"></i>
+					</button>
+				</span>
+			</form>
+		</div>
+	</div>
+	
+	<div class="bottom-contents">
+		<!-- quote -->
+		<div id="quote">
+			<span></span>
+			<span></span>
+		</div>
+
+		<!-- bg info -->
+		<div id="bg-info">
+			<span></span>
+			<span> / Unsplash</span>
+		</div>
+
+		<!-- todo -->
+		<div id="todo">
+			<p>Todo</p>
+			<div class="todo-box">
+				<p class="todo-title">To Dos</p>
+				<div class="todo-start">
+					<p>Add a todo to get started</p>
+					<button type="button">New Todo</button>
+				</div>
+				<form id="todo-form" class="blind">
+					<input type="text" placeholder="New Todo">
+				</form>
+				<ul id="todo-list"></ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="js/background.js"></script>
+	<script src="js/weather.js"></script>
+	<script src="js/clock.js"></script>
+	<script src="js/greeting.js"></script>
+	<script src="js/quotes.js"></script>
+	<script src="js/todo.js"></script>
+</body>
+</html>
